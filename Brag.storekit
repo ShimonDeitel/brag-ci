@@ -1,0 +1,29 @@
+{
+  "identifier" : "brag",
+  "nonRenewingSubscriptions" : [],
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "brag_pro_unlock",
+      "localizations" : [
+        {
+          "description" : "Unlocks unlimited accomplishments and full summary export",
+          "displayName" : "Brag Pro",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "brag_pro_unlock",
+      "referenceName" : "Brag Pro Unlock",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false
+  },
+  "subscriptionGroups" : [],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}
