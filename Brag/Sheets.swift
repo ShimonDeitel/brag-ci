@@ -71,7 +71,6 @@ struct EntryFormView: View {
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") { dismiss() }
-                        .buttonStyle(.plain)
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button(isEditing ? "Save" : "Add") {
@@ -82,7 +81,6 @@ struct EntryFormView: View {
                         }
                         dismiss()
                     }
-                    .buttonStyle(.plain)
                     .disabled(text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
                     .accessibilityIdentifier("saveEntryButton")
                 }
@@ -110,7 +108,6 @@ struct SummaryView: View {
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Close") { dismiss() }
-                        .buttonStyle(.plain)
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     ShareLink(item: store.summaryText().isEmpty ? "No accomplishments logged yet." : store.summaryText()) {
